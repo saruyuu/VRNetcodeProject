@@ -583,7 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6960e84d07fb87f47956e7a81d71c4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ProtocolType: 0
+  m_ProtocolType: 1
   m_UseWebSockets: 0
   m_UseEncryption: 0
   m_MaxPacketQueueSize: 128
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6803f8aa55ca31419596fee3e37d287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mug: {fileID: 1367280886}
+  MugMaterialChenger: {fileID: 1578496730}
 --- !u!4 &620438304
 Transform:
   m_ObjectHideFlags: 0
@@ -2447,7 +2447,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2907,23 +2907,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2357740118047020402, guid: f727782be5090c644bbd8d9c1aee79c8, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2357740118047020402, guid: f727782be5090c644bbd8d9c1aee79c8, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1130677685}
+      objectReference: {fileID: 620438303}
     - target: {fileID: 2357740118047020402, guid: f727782be5090c644bbd8d9c1aee79c8, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2357740118047020402, guid: f727782be5090c644bbd8d9c1aee79c8, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: OnLocalPressed
       objectReference: {fileID: 0}
     - target: {fileID: 2357740118047020402, guid: f727782be5090c644bbd8d9c1aee79c8, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: NetWorlButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2357740118047020402, guid: f727782be5090c644bbd8d9c1aee79c8, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -3587,6 +3587,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e6fc1a628b51314da8d8537c621269f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1578496729}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e6fc1a628b51314da8d8537c621269f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578496730}
   m_SourcePrefab: {fileID: 100100000, guid: 7e6fc1a628b51314da8d8537c621269f, type: 3}
 --- !u!4 &1578496725 stripped
 Transform:
@@ -3684,6 +3687,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7219886339314900476, guid: 7e6fc1a628b51314da8d8537c621269f, type: 3}
+--- !u!114 &1578496730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578496726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c2bcd1fdac85740a96e2788f9137ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1627037466
 GameObject:
   m_ObjectHideFlags: 0
